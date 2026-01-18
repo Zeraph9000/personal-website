@@ -9,25 +9,29 @@ export default {
     extend: {
       colors: {
         dark: {
-          bg: '#0a0e27',
-          surface: '#0f1629',
-          card: '#151b2e',
-          border: '#1e2a47',
+          bg: '#0a0a0a',
+          surface: '#1a1a1a',
+          separator: '#18181b',
         },
-        blue: {
-          dark: '#1e3a5f',
-          medium: '#2563eb',
-          light: '#3b82f6',
-          accent: '#60a5fa',
-          glow: '#3b82f6',
+        text: {
+          primary: '#e4e4e7',
+          muted: '#9ca3af',
+        },
+        border: {
+          DEFAULT: '#27272a',
+        },
+        accent: {
+          cyan: '#06b6d4',
+          teal: '#14b8a6',
+          blue: '#3b82f6',
         }
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        'glow': '0 0 20px rgba(59, 130, 246, 0.3)',
-        'glow-lg': '0 0 30px rgba(59, 130, 246, 0.4)',
+        'glow-cyan': '0 0 20px rgba(6, 182, 212, 0.3)',
+        'glow-blue': '0 0 20px rgba(59, 130, 246, 0.3)',
       },
     },
   },

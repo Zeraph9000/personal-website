@@ -23,7 +23,7 @@ export function initNavigation(): void {
       const targetSection = document.getElementById(targetId || '');
       
       if (targetSection) {
-        const offsetTop = targetSection.offsetTop - 80; // Account for fixed nav (h-20)
+        const offsetTop = targetSection.offsetTop - 64; // Account for fixed nav (h-16)
         window.scrollTo({
           top: offsetTop,
           behavior: 'smooth'
@@ -39,7 +39,7 @@ export function initNavigation(): void {
 
     sections.forEach(section => {
       const sectionHeight = section.clientHeight;
-      const sectionTop = (section as HTMLElement).offsetTop - 120;
+      const sectionTop = (section as HTMLElement).offsetTop - 100;
       const sectionId = section.getAttribute('id') || '';
 
       if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {

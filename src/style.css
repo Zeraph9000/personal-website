@@ -17,46 +17,73 @@
 @layer components {
   .nav-link {
     @apply font-medium transition-colors duration-200;
-    color: #3b82f6; /* blue-light */
+    color: #e4e4e7; /* text-primary */
   }
   
   .nav-link:hover {
-    color: #60a5fa; /* blue-accent */
+    color: #06b6d4; /* accent-cyan */
   }
   
   .nav-link.active {
-    color: #60a5fa; /* blue-accent */
+    color: #06b6d4; /* accent-cyan */
   }
   
   .card {
     @apply rounded-lg p-6 transition-all duration-300;
-    background-color: #151b2e; /* dark-card */
-    border: 1px solid #1e2a47; /* dark-border */
+    background-color: #1a1a1a; /* dark-surface */
+    border: 1px solid #27272a; /* border */
   }
   
   .card:hover {
-    border-color: #2563eb; /* blue-medium */
+    border-color: #06b6d4; /* accent-cyan */
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.2);
+    transform: translateY(-2px);
   }
   
   .btn-primary {
-    @apply px-8 py-3 text-white font-semibold rounded-lg transition-all duration-300;
-    background-color: #2563eb; /* blue-medium */
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    @apply px-6 py-3 font-semibold rounded-lg transition-all duration-300;
+    background-color: #06b6d4; /* accent-cyan */
+    color: #0a0a0a; /* dark-bg */
+    box-shadow: 0 0 15px rgba(6, 182, 212, 0.4);
   }
   
   .btn-primary:hover {
-    background-color: #3b82f6; /* blue-light */
-    box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+    background-color: #14b8a6; /* accent-teal */
+    box-shadow: 0 0 25px rgba(6, 182, 212, 0.6);
+    transform: translateY(-1px);
   }
   
   .btn-secondary {
-    @apply px-8 py-3 font-semibold rounded-lg transition-all duration-300;
-    border: 2px solid #2563eb; /* blue-medium */
-    color: #3b82f6; /* blue-light */
+    @apply px-6 py-3 font-semibold rounded-lg transition-all duration-300;
+    border: 2px solid #3b82f6; /* accent-blue */
+    color: #3b82f6; /* accent-blue */
   }
   
   .btn-secondary:hover {
-    background-color: rgba(37, 99, 235, 0.1); /* blue-medium/10 */
-    color: #60a5fa; /* blue-accent */
+    background-color: rgba(59, 130, 246, 0.1); /* accent-blue/10 */
+    color: #06b6d4; /* accent-cyan */
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+  }
+  
+  .link-accent {
+    @apply transition-colors duration-200;
+    color: #06b6d4; /* accent-cyan */
+  }
+  
+  .link-accent:hover {
+    color: #14b8a6; /* accent-teal */
+  }
+  
+  .skill-badge {
+    @apply px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300;
+    background-color: #1a1a1a; /* dark-surface */
+    border: 1px solid #27272a; /* border */
+    color: #e4e4e7; /* text-primary */
+  }
+  
+  .skill-badge:hover {
+    border-color: #06b6d4; /* accent-cyan */
+    color: #06b6d4; /* accent-cyan */
+    box-shadow: 0 0 10px rgba(6, 182, 212, 0.2);
   }
 }
