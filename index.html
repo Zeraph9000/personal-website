@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="bg-dark-bg text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-dark-surface/95 backdrop-blur-md border-b border-dark-border z-50">
+        <div class="max-w-6xl mx-auto px-6 lg:px-12">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-lg font-bold tracking-tight text-blue-accent">YOUR NAME</div>
+                <div class="hidden md:flex space-x-12">
+                    <a href="#home" class="nav-link">HOME</a>
+                    <a href="#about" class="nav-link">ABOUT</a>
+                    <a href="#projects" class="nav-link">PROJECTS</a>
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-blue-accent">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-dark-border bg-dark-surface">
+            <div class="px-6 py-6 space-y-6">
+                <a href="#home" class="block nav-link">HOME</a>
+                <a href="#about" class="block nav-link">ABOUT</a>
+                <a href="#projects" class="block nav-link">PROJECTS</a>
+                <a href="#contact" class="block nav-link">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-40 pb-32 px-6 lg:px-12 bg-gradient-to-b from-dark-bg via-dark-surface to-dark-bg relative overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-blue-medium rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-blue-accent rounded-full blur-3xl"></div>
+        </div>
+        <div class="max-w-6xl mx-auto relative z-10">
+            <h1 class="text-6xl md:text-8xl lg:text-9xl font-black mb-8 leading-none tracking-tight">
+                <span class="text-white">YOUR</span><br>
+                <span class="bg-gradient-to-r from-blue-light to-blue-accent bg-clip-text text-transparent">NAME</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-12 font-light max-w-2xl text-blue-light">
+                FULL STACK DEVELOPER
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6">
+                <a href="#projects" class="btn-primary">
+                    VIEW PROJECTS →
+                </a>
+                <a href="#contact" class="btn-secondary">
+                    CONTACT →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 px-6 lg:px-12 border-t border-dark-border bg-dark-surface">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl md:text-6xl font-black mb-16 tracking-tight">
+                <span class="text-blue-accent">ABOUT</span>
+            </h2>
+            <div class="card space-y-8">
+                <p class="text-xl md:text-2xl leading-relaxed font-light text-blue-light">
+                    I'm a passionate developer who loves building innovative solutions and bringing ideas to life. 
+                    With expertise in modern web technologies, I create beautiful and functional applications.
+                </p>
+                <p class="text-xl md:text-2xl leading-relaxed font-light text-blue-light">
+                    When I'm not coding, you can find me exploring new technologies, contributing to open source, 
+                    or working on side projects that challenge me to grow.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-32 px-6 lg:px-12 border-t border-dark-border bg-dark-bg">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl md:text-6xl font-black mb-20 tracking-tight">
+                <span class="text-blue-accent">PROJECTS</span>
+            </h2>
+            <div id="projects-container" class="space-y-8">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 px-6 lg:px-12 border-t border-dark-border bg-dark-surface">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl md:text-6xl font-black mb-16 tracking-tight">
+                <span class="text-blue-accent">CONTACT</span>
+            </h2>
+            <div class="card mb-8">
+                <p class="text-xl md:text-2xl mb-8 font-light text-blue-light">
+                    I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 flex-wrap">
+                    <a href="mailto:your.email@example.com" class="btn-primary">
+                        EMAIL →
+                    </a>
+                    <a href="https://github.com/yourusername" target="_blank" class="btn-secondary">
+                        GITHUB →
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" class="btn-secondary">
+                        LINKEDIN →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 lg:px-12 border-t border-dark-border text-center bg-dark-bg">
+        <p class="text-sm font-light text-blue-dark">&copy; 2024 YOUR NAME</p>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
