@@ -1,0 +1,22 @@
+[
+  {
+    "title": "SplitTab",
+    "description": "A group expense tracker that makes it easy to split bills, track shared expenses, and settle up with friends. Built for simplicity and real-time collaboration",
+    "technologies": ["React", "TypeScript", "Tailwind CSS"],
+    "githubUrl": "https://github.com/Zeraph9000/group-expense-tracker",
+    "liveUrl": "https://splittab.andrewdavindra.com"
+  },
+  {
+    "title": "Project Two",
+    "description": "An innovative solution that solves complex problems with elegant code. Built with performance and scalability in mind.",
+    "technologies": ["Node.js", "Express", "MongoDB"],
+    "githubUrl": "https://github.com/yourusername/project-two",
+    "liveUrl": "https://project-two.example.com"
+  },
+  {
+    "title": "Project Three",
+    "description": "A beautiful mobile-first application that provides an exceptional user experience across all devices.",
+    "technologies": ["Vue.js", "TypeScript", "Vite"],
+    "githubUrl": "https://github.com/yourusername/project-three"
+  }
+]

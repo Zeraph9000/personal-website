@@ -1,3 +1,5 @@
+import projects from './projects.json';
+
 interface Project {
   title: string;
   description: string;
@@ -6,29 +8,6 @@ interface Project {
   liveUrl?: string;
   imageUrl?: string;
 }
-
-const projects: Project[] = [
-  {
-    title: 'Project One',
-    description: 'A modern web application built with cutting-edge technologies. Features include real-time updates, responsive design, and intuitive user interface.',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/yourusername/project-one',
-    liveUrl: 'https://project-one.example.com',
-  },
-  {
-    title: 'Project Two',
-    description: 'An innovative solution that solves complex problems with elegant code. Built with performance and scalability in mind.',
-    technologies: ['Node.js', 'Express', 'MongoDB'],
-    githubUrl: 'https://github.com/yourusername/project-two',
-    liveUrl: 'https://project-two.example.com',
-  },
-  {
-    title: 'Project Three',
-    description: 'A beautiful mobile-first application that provides an exceptional user experience across all devices.',
-    technologies: ['Vue.js', 'TypeScript', 'Vite'],
-    githubUrl: 'https://github.com/yourusername/project-three',
-  },
-];
 
 function createProjectCard(project: Project): string {
   const technologies = project.technologies.map(tech => 
@@ -73,5 +52,4 @@ export function initProjects(): void {
   }
 }
 
-// Export projects array so it can be easily modified
 export { projects };
